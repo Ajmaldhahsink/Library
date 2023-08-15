@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+.nav{
+    padding :15px 0px 0 0;
+    width: 100vw;
+    height: 5vh;
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    position: fixed;
+    top:0;
+    z-index: 999;
+}
+.nav .a1{
+    position: absolute;
+    right: 240px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.nav .a2{
+    position: absolute;
+    right: 140px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.nav .a3{
+    position: absolute;
+    right: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+#dept{
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.box1{
+    width: auto;
+    height: 400px;
+    margin: 20px;
+    border-radius: 3px;
+}
+.bimg{
+    margin-top: 70px;
+    width: auto;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;   
+}
+.heading h2{
+    text-align: center;
+    font-size: 3.4rem;
+    letter-spacing: 2px;
+    color: purple; 
+    font-family: 'Voltaire', sans-serif;  
+}
+.show {
+    /* display: grid; */
+    /* grid-template-columns: 200px,200px,200px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    column-gap: 50px;
+    color: black;
+}
+h1{
+    font-size: 1.5rem;
+}
+.nav .a1::after,.nav .a2::after,.nav .a3::after{
+    content: "";
+    display: block;
+    height: 3px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: red;
+    transform: scale(0);
+    transition: transform 0.2s ease;
+}
+.nav .a1:hover::after,.nav .a2:hover::after,.nav .a3:hover::after{
+    transform: scale(1);
+}
+.nav a:hover{
+    letter-spacing: 1px;
+}
+
+#number1,#number3,#number4{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.books{
+    height: 100px;
+    width: 300px;
+    margin-bottom: 20px;
+    background-color: rgba(216, 254, 27, 0.707);   
+}
+
+.iss{
+    height: 100px;
+    width: 300px;
+    background-color: rgba(255, 0, 200, 0.552);
+}
+.avl{
+    height: 100px;
+    width: 300px;
+    background-color: rgba(0, 255, 0, 0.464);
+
+}
+.show div{
+    border-radius: 12px;
+    border-color: black;
+    border-width: 4px;
+    padding: 20px;
+}
+.books:hover{
+    transition: 0.3s ease-in-out;
+    width: 320px;
+}
+.iss:hover{
+    transition: 0.3s ease-in-out;
+    width: 320px;
+}
+.avl:hover{
+    transition: 0.3s ease-in-out;
+    width: 320px;
+}
+

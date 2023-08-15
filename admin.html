@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+    <link type="text/css" rel="stylesheet" href="admin.css">
+    <style>
+    .nav{
+        padding :15px 0px 0 0;
+        width: 100vw;
+        height: 5vh;
+        background-color: purple;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; 
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 999;
+    }
+    .nav a{
+        margin-right: 40px;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    #dept{
+        position: absolute;
+        top: -5px;
+        left: 10px;
+        color: white;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    .title{
+        margin: 80px 0 40px 0;
+    }
+    .op{
+        display: grid;
+        grid-template-columns: repeat(2,350px);
+        width: 45%;
+        margin: auto;
+        margin-top: 100px;
+        row-gap: 70px;
+    }
+    .op button{
+        font-size: 1.4rem;
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <p id="dept">DEPARTMENT OF CSE</p>
+        <div><a href="../home.php">Home</a></div>
+    </div>
+
+    <div class="title">
+        <h1>WELCOME ADMIN</h1>
+    </div>
+
+    <div class="op">
+        <div class="add">
+            <button onclick="window.location.href='/library/admin/add/add.php'">Add Book
+            </button>
+        </div>
+        <div class="search">
+            <button onclick="window.location.href='/library/search.php'">Search Book
+            </button>
+        </div>
+        <div class="issue">
+            <button onclick="window.location.href='/library/admin/issue/issue.php'">Issue Book
+            </button>
+        </div>
+        <div class="issued">
+            <button onclick="window.location.href='/library/admin/issued/issued.php'">View Issued
+            </button>
+        </div>
+        <div class="receive">
+            <button onclick="window.location.href='/library/admin/return/return.php'">Return Book
+            </button>
+        </div>
+        <div class="del">
+            <button onclick="window.location.href='/library/admin/delete/delete.php'">Delete Book
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>

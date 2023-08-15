@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+body{
+    font-family: 'poppins', sans-serif;
+    background-image: linear-gradient(to right, rgb(241, 185, 230) , rgb(132, 255, 226));
+}
+.title{
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+
+.op button{
+    width: 300px;
+    height: 70px;
+    background-color: rgba(219, 113, 240, 0.714);
+    border-radius: 4px;
+    border-color: transparent;
+    transition: 0.5s;
+    color: white;
+    font-size: 1.3rem;
+
+}
+
+button:hover{
+    background-color: lime;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    
+
+}
+
+.del button:hover{
+    background-color: red;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    
+}
+.add button{
+    color: green;
+}
+.del button{
+    color: red;
+}

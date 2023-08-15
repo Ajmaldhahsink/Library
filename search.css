@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+.nav{
+    padding :15px 0px 0 0;
+    width: 100vw;
+    height: 5vh;
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    position: fixed;
+    top:0;
+    z-index: 999;
+}
+.nav a{
+    margin-right: 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+#dept{
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.search{
+    width: 24%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    height: 65vh;
+    box-shadow: 0 0 10px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 45px 0 0 20px;
+}
+.content{
+    width: 66%;
+    border-radius: 10px;
+    height: 65.5vh;
+    overflow-y: auto;
+    padding: 0 20px 20px 20px;
+    margin-top: 35px;
+    margin-right: 10px;
+    position: relative;
+    /* background-color: gold; */
+}
+.search-header h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.search-body{
+    margin-top: 20px;
+    height: 60vh;
+}
+.search-body .searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;   
+}
+.search-body input{
+    height: 40px;
+    width: 80%;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px grey;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+.search-body i{
+    position: absolute;
+    right: 15%;
+    top: 17%;
+}
+.search-body i:hover{
+    cursor: pointer;
+    color: orangered;
+}
+.search-footer .quote{
+    text-align: center;
+    font-size: 1.2rem;
+    color: green;
+}
+
+.header{
+    height: 70px;
+    width: 98%;
+    background-color: brown;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 0px;
+} 
+
+.header p{
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 2px;
+}
+/* .content-body{
+    padding-top: 10px;
+} */
+td{
+    border: 1px solid black;
+    height: 40px;
+    width: 300px;
+    text-align: center;
+}
+tr:first-child{
+    background-color: black;
+    color: white;
+    height: 60px;
+    position: sticky;
+    top: 0;
+}
+.content::-webkit-scrollbar {
+    width:10px;
+}
+.content::-webkit-scrollbar-thumb {
+    border-radius:5px;
+    box-shadow: inset 0 0 50px brown ; 
+}
+.footer{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37px;
+}
+.footer p{
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+.footer span{
+    color: brown;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
